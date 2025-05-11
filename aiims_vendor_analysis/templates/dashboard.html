@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIIMS Vendor Analysis Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        img { max-width: 100%; height: auto; margin-bottom: 30px; border: 1px solid #ddd; box-shadow: 2px 2px 6px #ccc; }
+        h2 { margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>AIIMS Vendor Analysis Dashboard</h1>
+
+    <h2>1. Item-wise Price Increase (%)</h2>
+    <img src="{{ url_for('static', filename='plot_itemwise_increase.png') }}">
+
+    <h2>2. Vendor Profit Margins and Final Trust Status</h2>
+    <img src="{{ url_for('static', filename='plot_vendor_trust.png') }}">
+
+    <h2>3. Anomaly Detection in Profit Margins</h2>
+    <img src="{{ url_for('static', filename='plot_anomalies.png') }}">
+
+    <h2>4. Decision Tree for Trust Classification</h2>
+    <img src="{{ url_for('static', filename='decision_tree_structure.png') }}">
+</body>
+</html>
